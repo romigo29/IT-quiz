@@ -1,5 +1,7 @@
-
-
+#include <iostream>
+#include <Windows.h>
+#include "question_list.h"
+using namespace std;
 int main() {
 	/*добавить модули:
 	* 1)приветствие пользователя
