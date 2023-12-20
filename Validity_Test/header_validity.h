@@ -13,3 +13,4 @@ bool check_answer_validity();
 bool check_russian_input();
 bool check_english_input();
 bool check_number_input();
+bool check_special_symbol_input()æ

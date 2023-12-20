@@ -87,21 +87,7 @@ bool check_number_input(unsigned char number[50]) // проверка валид
 	return tr;
 }
 
-bool check_special_symbol_input(unsigned char input)
+bool check_special_symbol_input(unsigned char input) //проверка спецсимволов (в разработке)
 {
 	bool tr = 0;
-}
-
-int main()
-{
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	setlocale(LC_CTYPE, "Russian");
-
-	unsigned char a[100] = "апр о";
-	bool b = check_russian_input (a);
-		cout << b << endl;
-	char c = ' ';
-	unsigned int r = c;
-	cout << r;
 }
