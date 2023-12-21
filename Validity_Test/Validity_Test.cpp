@@ -13,7 +13,7 @@ using namespace std;
 	0 - если нет
 */
 
-bool check_answer_validity(char ans) //проверка валидности введённого ответа (предусмотрено до 5 вариантов)
+bool check_answer_validity(char ans) //проверка валидности введённого ответа (предусмотрено до 4 вариантов)
 {
 	bool tr = 0;
 	ans = tolower(ans);
@@ -21,7 +21,7 @@ bool check_answer_validity(char ans) //проверка валидности в�
 	{
 	default:
 		break;
-	case 'a': case 'b': case 'c': case 'd': case 'f':
+	case '1': case '2': case '3': case '4':
 		tr = 1;
 		break;
 	}
