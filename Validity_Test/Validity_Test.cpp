@@ -34,7 +34,7 @@ bool check_russian_input(unsigned char character[50]) // провекра вал
 	int i = 0;
 	while (character [i] != 0)
 	{
-		if (character[i] >= russian_left_border && character[i] <= russian_right_border)
+		if ( (character[i] >= russian_left_border && character[i] <= russian_right_border) || (character[i] == russian_yo_lowercase || character[i] == russian_yo_uppercase))
 			tr = 1;
 		else if (character[i] == space_symbol)
 			tr = 1;
