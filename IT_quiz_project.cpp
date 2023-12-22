@@ -1,6 +1,6 @@
 #include <Windows.h>
 #include "Validity_Test/header_validity.h"
-#include <hello.h>
+#include <menu/menu.h>
 //<определение списка вопросов и правильных ответов>
 #include "question_list.h"
 const int numQuestions = sizeof(questions) / sizeof(questions[0]); //вычисление количества вопросов
@@ -12,6 +12,21 @@ int main() {
 
 	//НАЧАЛО
 	//<приветствие пользователя>
+	 
+	switch (choice) {
+	case 1:
+		TestOPI();  // Вызов модуля TestOPI
+		break;
+	case 2:
+		TestOAiP();  // Вызов модуля TestOAiP
+		break;
+	case 3:
+		cout << "Выход из программы." << endl;
+		break;
+	default:
+		cout << "Некорректный номер теста!" << endl;
+		break;
+	}
 
 	for (int i = 0; i < numQuestions; i++)
 	{
