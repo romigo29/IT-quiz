@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <None Include="..\.gitignore">
+=======
     <ClInclude Include="..\menu\menu.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -35,9 +38,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
+>>>>>>> 61c0ddfa06d9ece008e94035fb4edc403f8a377d
       <Filter>Исходные файлы</Filter>
     </None>
-    <None Include="..\list_of_users_history">
+    <None Include="..\CppProperties.json">
       <Filter>Исходные файлы</Filter>
     </None>
     <None Include="..\.gitignore">
@@ -63,6 +67,31 @@
     <ClCompile Include="..\menu\menu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="..\TestOAiP.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestOPI.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Validity_Test.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TestOAiP.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestOPI.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\header_validity.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\menu\menu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+=======
     <ClCompile Include="..\TestOAiP\TestOAiP.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -72,5 +101,6 @@
     <ClCompile Include="..\Validity_Test\Validity_Test.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+>>>>>>> 61c0ddfa06d9ece008e94035fb4edc403f8a377d
   </ItemGroup>
 </Project>
