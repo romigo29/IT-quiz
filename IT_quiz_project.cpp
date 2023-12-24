@@ -2,18 +2,16 @@
 #include "Validity_Test/header_validity.h"
 #include <menu/menu.h>
 //<определение списка вопросов и правильных ответов>
-#include "question_list.h"
+#include "TestOAiP.h"
 const int numQuestions = sizeof(questions) / sizeof(questions[0]); //вычисление количества вопросов
 char answers[numQuestions];//массив ответов
 using namespace std;
 int main() {
 
-	hello();
-
 	//НАЧАЛО
 	//<приветствие пользователя>
 	 
-	switch (choice) {
+	switch (hello()) {
 	case 1:
 		TestOPI();  // Вызов модуля TestOPI
 		break;

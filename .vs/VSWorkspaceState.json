@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\menu",
+    "\\TestOPI"
   ],
-  "SelectedNode": "\\Validity_Test.sln",
+  "SelectedNode": "\\TestOPI\\TestOPI.h",
   "PreviewInSolutionExplorer": false
 }

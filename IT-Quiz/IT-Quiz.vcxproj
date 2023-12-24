@@ -133,6 +133,8 @@
     <Text Include="..\questions.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.gitignore" />
+    <None Include="..\CppProperties.json" />
     <None Include="..\list_of_users_history" />
     <None Include="..\README.md" />
   </ItemGroup>

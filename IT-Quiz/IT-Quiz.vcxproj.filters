@@ -31,6 +31,12 @@
     <None Include="..\list_of_users_history">
       <Filter>Исходные файлы</Filter>
     </None>
+    <None Include="..\.gitignore">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="..\CppProperties.json">
+      <Filter>Исходные файлы</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\IT_quiz_project.cpp">

@@ -10,5 +10,5 @@ int hello() {
   int choice;
   cout << "¬ведите номер теста: ";
   cin >> choice;
-  return 0;
+  return choice;
 }
