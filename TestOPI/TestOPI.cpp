@@ -1,8 +1,10 @@
 #include <iostream>
 #include "TestOPI.h"
+#include "Validity_Test/header_validity.h"
 using namespace std;
 void TestOPI() {
-    //заглушка тестами опи, потом допишу - Игорь
+
+    //заглушка тестами оаип, потом допишу - Игорь
     const string questions[8] = {
         "1. Компоновщик - это\n\
     1.	 Программа, которая принимает несколько объектных модулей и на их основе создает загрузочный модуль.\n\
@@ -46,6 +48,24 @@ void TestOPI() {
     4.	Ориентированы на повышение интеллектуального уровня ЭВМ и интерфейса с языками  "
     };
 
+    const int numQuestions = sizeof(questions) / sizeof(questions[0]); //вычисление количества вопросов
+    char answers[numQuestions];//массив ответов
+    using namespace std;
     /* список правильных ответов, в том же порядке, что и вопросы*/
     const int correctAnswers[8] = { 1,2,3,2,1,2,1,4 };
+
+    for (int i = 0; i < numQuestions; i++)
+    {
+        //ВЫВОД вопроса
+        cout << questions[i];
+        //ВВОД ответа
+        char tempAnswer;//текущий ответ, не проверенный на валидность
+        cin >> tempAnswer;
+        //<проверка на валидность> если ответ валидный, добавляем его в массив ответов
+        if (check_answer_validity(tempAnswer))
+        {
+            answers[i] = tempAnswer;
+        }
+
+    }
 }

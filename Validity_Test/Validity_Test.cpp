@@ -1,8 +1,5 @@
 ﻿#include <iostream>
 #include <Windows.h>
-
-
-#include "../question_list.h"
 #include "header_validity.h"
 
 using namespace std;

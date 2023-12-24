@@ -1,3 +1,4 @@
+#include <iostream>
 const int number_left_border = 0x30;
 const int number_right_border = 0x39;
 
@@ -11,8 +12,10 @@ const int english_lowercase_right_border = 0x7a;
 
 const int space_symbol = 0x20;
 
-bool check_answer_validity();
-bool check_russian_input();
-bool check_english_input();
-bool check_number_input();
-bool check_special_symbol_input()æ
+bool check_answer_validity(char ans);
+bool check_russian_input(unsigned char character[50]);
+bool check_english_input(unsigned char character[50]);
+bool check_number_input(unsigned char character[50]);
+bool check_special_symbol_input(unsigned char input);
+void TestOAiP();
+void TestOPI();

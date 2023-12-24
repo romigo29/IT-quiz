@@ -2,7 +2,7 @@
 #include "TestOAiP.h"
 using namespace std;
 
-void TestOAiP() {
+int TestOAiP() {
     // Массив с вопросами и вариантами ответов
     const string questions[8] = {
         "1. Компоновщик - это\n\
@@ -46,8 +46,11 @@ void TestOAiP() {
     3.	 Ориентированы на использование в конкретной ЭВМ\n\
     4.	Ориентированы на повышение интеллектуального уровня ЭВМ и интерфейса с языками  "
     };
-
+    const int numQuestions = sizeof(questions) / sizeof(questions[0]); //вычисление количества вопросов
+    char answers[numQuestions];//массив ответов
+    using namespace std;
     /* список правильных ответов, в том же порядке, что и вопросы*/
     const int correctAnswers[8] = { 1,2,3,2,1,2,1,4 };
+    return
 }
 

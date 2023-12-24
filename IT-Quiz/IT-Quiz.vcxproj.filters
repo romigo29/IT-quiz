@@ -15,7 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\question_list.h">
+    <ClInclude Include="..\menu\menu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestOAiP\TestOAiP.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestOPI\TestOPI.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Validity_Test\header_validity.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -37,9 +46,30 @@
     <None Include="..\CppProperties.json">
       <Filter>Исходные файлы</Filter>
     </None>
+    <None Include="..\Validity_Test\Validity_Test.vcxproj">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="..\Validity_Test\Validity_Test.vcxproj.filters">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="..\Validity_Test\Validity_Test.vcxproj.user">
+      <Filter>Исходные файлы</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\IT_quiz_project.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\menu\menu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestOAiP\TestOAiP.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestOPI\TestOPI.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Validity_Test\Validity_Test.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

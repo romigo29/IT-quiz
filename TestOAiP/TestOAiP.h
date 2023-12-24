@@ -1,3 +1,3 @@
 #include <iostream>
 
-void TestOAiP();
+int TestOAiP();
