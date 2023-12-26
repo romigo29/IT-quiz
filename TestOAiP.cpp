@@ -3,7 +3,7 @@
 #include "header_validity.h"
 using namespace std;
 
-void TestOAiP() {
+int* TestOAiP() {
     setlocale(LC_ALL, "Russian");
     const int numquestionsOAIP = sizeof(questionsOAIP) / sizeof(questionsOAIP[0]); //вычисление количества вопросов
     int answers[15]{};
@@ -20,7 +20,7 @@ void TestOAiP() {
         {
             answers[i] = tempAnswer;
         }
-
     }
+    return answers;
 }
 
