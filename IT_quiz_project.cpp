@@ -5,17 +5,22 @@
 #include "TestOPI.h"
 using namespace std;
 int* answers;
+
+void check_answers(int*,const int*,int);
+
 int main() {
-	setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "rus");
 	//НАЧАЛО
 	//<приветствие пользователя>
 	 
 	switch (hello()) {
 	case 1:
 		TestOPI(answers);  // Вызов модуля TestOPI
+		check_answers(answers, correctAnswersOPI, 10);
 		break;
 	case 2:
 		TestOAiP(answers);  // Вызов модуля TestOAiP
+		check_answers(answers, correctAnswersOAIP, 15);
 		break;
 	case 3:
 		cout << "Выход из программы." << endl;
@@ -27,4 +32,8 @@ int main() {
 	//<вывод результата>
 	//КОНЕЦ
 	return 0;
+}
+void check_answers(int* answers,const int* rightAnswers, int size)
+{
+
 }
