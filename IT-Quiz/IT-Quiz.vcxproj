@@ -138,7 +138,6 @@
     <Text Include="..\questions.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\.gitignore" />
     <None Include="..\CppProperties.json" />
     <None Include="..\list_of_users_history" />
     <None Include="..\README.md" />
@@ -155,7 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\header_validity.h" />
-    <ClInclude Include="..\menu\menu.h" />
     <ClInclude Include="..\TestOAiP.h" />
     <ClInclude Include="..\TestOPI.h" />
     <ClCompile Include="..\TestOAiP\TestOAiP.cpp" />
