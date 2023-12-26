@@ -1,8 +1,10 @@
 #include <iostream>
+#include <Windows.h>
 #include "TestOPI.h"
 #include "header_validity.h"
 using namespace std;
 void TestOPI() {
+    setlocale(LC_CTYPE, "Russian");
     //вопросы по опи
     const string questions[10] = {
    "1) Что такое жизненный цикл ПО?\n\

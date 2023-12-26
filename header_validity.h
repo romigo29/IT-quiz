@@ -17,8 +17,5 @@ bool check_russian_input(unsigned char character[50]);
 bool check_english_input(unsigned char character[50]);
 bool check_number_input(unsigned char character[50]);
 bool check_special_symbol_input(unsigned char input);
-<<<<<<< HEAD:header_validity.h
-=======
 void TestOAiP();
 void TestOPI();
->>>>>>> 61c0ddfa06d9ece008e94035fb4edc403f8a377d:Validity_Test/header_validity.h

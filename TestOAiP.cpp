@@ -4,6 +4,7 @@
 using namespace std;
 
 void TestOAiP() {
+    setlocale(LC_ALL, "Russian");
     // Массив с вопросами и вариантами ответов
     const string questions[15] = {
         "1) Компоновщик - это\n\

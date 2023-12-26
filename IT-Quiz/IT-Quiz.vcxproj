@@ -129,10 +129,6 @@
   <ItemGroup>
     <None Include="..\.gitignore" />
     <None Include="..\CppProperties.json" />
-    <ClInclude Include="..\menu\menu.h" />
-    <ClInclude Include="..\TestOAiP\TestOAiP.h" />
-    <ClInclude Include="..\TestOPI\TestOPI.h" />
-    <ClInclude Include="..\Validity_Test\header_validity.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\questions.txt" />
@@ -141,24 +137,19 @@
     <None Include="..\CppProperties.json" />
     <None Include="..\list_of_users_history" />
     <None Include="..\README.md" />
-    <None Include="..\Validity_Test\Validity_Test.vcxproj" />
-    <None Include="..\Validity_Test\Validity_Test.vcxproj.filters" />
-    <None Include="..\Validity_Test\Validity_Test.vcxproj.user" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\IT_quiz_project.cpp" />
-    <ClCompile Include="..\menu\menu.cpp" />
+    <ClCompile Include="..\menu.cpp" />
     <ClCompile Include="..\TestOAiP.cpp" />
     <ClCompile Include="..\TestOPI.cpp" />
     <ClCompile Include="..\Validity_Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\header_validity.h" />
+    <ClInclude Include="..\menu.h" />
     <ClInclude Include="..\TestOAiP.h" />
     <ClInclude Include="..\TestOPI.h" />
-    <ClCompile Include="..\TestOAiP\TestOAiP.cpp" />
-    <ClCompile Include="..\TestOPI\TestOPI.cpp" />
-    <ClCompile Include="..\Validity_Test\Validity_Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
