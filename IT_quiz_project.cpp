@@ -35,5 +35,13 @@ int main() {
 }
 void check_answers(int* answers,const int* rightAnswers, int size)
 {
-
+	int nRightAnswers=0;
+	for (int j = 0; j < size; j++)
+	{
+		if (answers[j]==rightAnswers[j])
+		{
+			nRightAnswers++;
+		}
+	}
+	cout << "правильных ответов: " << nRightAnswers << "/" << size;
 }
