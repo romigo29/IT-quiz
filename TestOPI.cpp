@@ -57,6 +57,7 @@ string questionsOPI[] = {
 };
 
 void TestOPI(int* answers) {
+    answers = new int[10];
     setlocale(LC_CTYPE, "Russian");
     const int numquestionsOPI = 10;
     answers = new int[numquestionsOPI];

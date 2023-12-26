@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 #include "TestOAiP.h"
 #include "header_validity.h"
 using namespace std;
@@ -82,6 +83,7 @@ string questionsOAIP[] = {
 };
 
 void TestOAiP(int* answers) {
+    answers = new int[15];
     setlocale(LC_ALL, "Russian");
     const int numquestionsOAIP = 15; //вычисление количества вопросов
     answers = new int[numquestionsOAIP];
