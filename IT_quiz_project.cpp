@@ -4,6 +4,7 @@
 #include "TestOAiP.h"
 #include "TestOPI.h"
 using namespace std;
+int* answers;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	//НАЧАЛО
@@ -11,10 +12,10 @@ int main() {
 	 
 	switch (hello()) {
 	case 1:
-		TestOPI();  // Вызов модуля TestOPI
+		TestOPI(answers);  // Вызов модуля TestOPI
 		break;
 	case 2:
-		TestOAiP();  // Вызов модуля TestOAiP
+		TestOAiP(answers);  // Вызов модуля TestOAiP
 		break;
 	case 3:
 		cout << "Выход из программы." << endl;

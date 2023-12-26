@@ -3,10 +3,10 @@
 #include "TestOPI.h"
 #include "header_validity.h"
 using namespace std;
-int* TestOPI() {
+void TestOPI(int* answers) {
     setlocale(LC_CTYPE, "Russian");
     const int numquestionsOPI = sizeof(questionsOPI) / sizeof(questionsOPI[0]);
-    int answers[10]{};
+    answers = new int[10];
     for (int i = 0; i < numquestionsOPI; i++)
     {
         //ВЫВОД вопроса
@@ -20,5 +20,4 @@ int* TestOPI() {
             answers[i] = tempAnswer;
         }
     }
-    return answers;
 }
