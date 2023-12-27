@@ -9,7 +9,7 @@ int* answers;
 void check_answers(int*,const int*,int);
 
 int main() {
-
+	setlocale(LC_ALL, "Russian");
 	//НАЧАЛО
 	//<приветствие пользователя>
 	 
