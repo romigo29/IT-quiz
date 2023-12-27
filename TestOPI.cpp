@@ -43,7 +43,7 @@ string questionsOPI[] = {
     1. 1riew\n\
     2. abcdef\n\
     3. firstName\n\
-    4. дерево\n"
+    4. дерево\n",
     "9)  ака€ структура данных используетс€ дл€ хранени€ элементов в пор€дке 'первый вошел, первый вышел' ?\n\
     1. —тек (Stack) \n\
     2. ќчередь(Queue) \n\
@@ -56,7 +56,7 @@ string questionsOPI[] = {
     4. Agile / TDD\n",
 };
 
-void TestOPI(int* answers) {
+int* TestOPI(int *answers) {
     answers = new int[10];
     setlocale(LC_CTYPE, "Russian");
     const int numquestionsOPI = 10;
@@ -71,7 +71,8 @@ void TestOPI(int* answers) {
         //<проверка на валидность> если ответ валидный, добавл€ем его в массив ответов
         if (check_answer_validity(tempAnswer))
         {
-            answers[i] = tempAnswer;
+            answers[i] = tempAnswer - '0';/*конвертируем символ числа в число*/
         }
     }
+   return answers;
 }

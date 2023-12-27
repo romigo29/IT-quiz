@@ -82,7 +82,7 @@ string questionsOAIP[] = {
     4.	 Программа позволяющая подготовку исходного кода\n",
 };
 
-void TestOAiP(int* answers) {
+int* TestOAiP(int* answers) {
     answers = new int[15];
     setlocale(LC_ALL, "Russian");
     const int numquestionsOAIP = 15; //вычисление количества вопросов
@@ -101,5 +101,6 @@ void TestOAiP(int* answers) {
             answers[i] = tempAnswer;
         }
     }
+    return answers;
 }
 

@@ -10,27 +10,27 @@ void check_answers(int*,const int*,int);
 
 int main() {
 
-	//РќРђР§РђР›Рћ
-	//<РїСЂРёРІРµС‚СЃС‚РІРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ>
+	//НАЧАЛО
+	//<приветствие пользователя>
 	 
 	switch (hello()) {
 	case 1:
-		TestOPI(answers);  // Р’С‹Р·РѕРІ РјРѕРґСѓР»СЏ TestOPI
+		answers=TestOPI(answers);  // Вызов модуля TestOPI
 		check_answers(answers, correctAnswersOPI, 10);
 		break;
 	case 2:
-		TestOAiP(answers);  // Р’С‹Р·РѕРІ РјРѕРґСѓР»СЏ TestOAiP
+		answers=TestOAiP(answers);  // Вызов модуля TestOAiP
 		check_answers(answers, correctAnswersOAIP, 15);
 		break;
 	case 3:
-		cout << "Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹." << endl;
+		cout << "Выход из программы." << endl;
 		break;
 	default:
-		cout << "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РЅРѕРјРµСЂ С‚РµСЃС‚Р°!" << endl;
+		cout << "Некорректный номер теста!" << endl;
 		break;
 	}
-	//<РІС‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°>
-	//РљРћРќР•Р¦
+	//<вывод результата>
+	//КОНЕЦ
 	return 0;
 }
 void check_answers(int* answers,const int* rightAnswers, int size)
@@ -43,5 +43,5 @@ void check_answers(int* answers,const int* rightAnswers, int size)
 			nRightAnswers++;
 		}
 	}
-	cout << "РїСЂР°РІРёР»СЊРЅС‹С… РѕС‚РІРµС‚РѕРІ: " << nRightAnswers << "/" << size;
+	cout << "правильных ответов: " << nRightAnswers << "/" << size;
 }
