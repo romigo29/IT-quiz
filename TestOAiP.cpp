@@ -98,7 +98,7 @@ int* TestOAiP(int* answers) {
         //<проверка на валидность> если ответ валидный, добавляем его в массив ответов
         if (check_answer_validity(tempAnswer))
         {
-            answers[i] = tempAnswer;
+            answers[i] = tempAnswer - '0';
         }
     }
     return answers;
