@@ -1,6 +1,9 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include "header_validity.h"
+#include "TestOAiP.h"
+#include "TestOPI.h"
+#include "menu.h"
 
 using namespace std;
 
@@ -17,6 +20,8 @@ bool check_answer_validity(char ans) //проверка валидности в�
 	switch (ans)
 	{
 	default:
+		
+			cout <<"Введен некорректный символ. Введите вариант ответа" << endl;
 		break;
 	case '1': case '2': case '3': case '4':
 		tr = 1;
@@ -38,6 +43,7 @@ bool check_russian_input(unsigned char character[50]) // провекра вал
 		else
 		{
 			tr = 0;
+			cout <<"Введен некорректный символ. Введите русскую букву" << endl;
 			break;
 		}
 		i++;
@@ -60,6 +66,8 @@ bool check_english_input(unsigned char character[50]) // провекра вал
 			tr = 1;
 		else
 		{
+			
+			cout <<"Введен некорректный символ. Введите латинский символ" << endl;
 			tr = 0;
 			break;
 		}
@@ -78,6 +86,8 @@ bool check_number_input(unsigned char number[50]) // проверка валид
 		else
 		{
 			tr = 0;
+			
+			cout <<"Введен некорректный символ. Введите цифру" << endl;
 			break;
 		}
 	}
