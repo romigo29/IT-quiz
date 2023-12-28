@@ -7,12 +7,13 @@ using namespace std;
 int* answers;
 
 void check_answers(int*,const int*,int);
+void displayResults(int, int);
 
 int main() {
 	setlocale(LC_ALL, "Russian");
 	//НАЧАЛО
 	//<приветствие пользователя>
-	 
+	
 	switch (hello()) {
 	case 1:
 		answers=TestOPI(answers);  // Вызов модуля TestOPI
@@ -24,6 +25,7 @@ int main() {
 		break;
 	case 3:
 		cout << "Выход из программы." << endl;
+		exit(0);
 		break;
 	default:
 		cout << "Некорректный номер теста!" << endl;
@@ -31,17 +33,24 @@ int main() {
 	}
 	//<вывод результата>
 	//КОНЕЦ
+
 	return 0;
 }
-void check_answers(int* answers,const int* rightAnswers, int size)
+
+void check_answers(int* answers, const int* rightAnswers, int size)
 {
-	int nRightAnswers=0;
+	int nRightAnswers = 0;
 	for (int j = 0; j < size; j++)
 	{
-		if (answers[j]==rightAnswers[j])
+		if (answers[j] == rightAnswers[j])
 		{
 			nRightAnswers++;
 		}
 	}
-	cout << "правильных ответов: " << nRightAnswers << "/" << size;
+	float percentage = (static_cast<float>(nRightAnswers) / size) * 100;
+	    cout << "\n" << endl;
+		cout << "Результаты теста:" << endl;
+		cout << "Количество правильных ответов: " << nRightAnswers << endl;
+		cout << "Общее количество вопросов: " << size << endl;
+		cout << "Процент правильных ответов: " << percentage << "%" << endl;
 }
