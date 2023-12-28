@@ -96,9 +96,16 @@ int* TestOAiP(int* answers) {
         char tempAnswer;//текущий ответ, не проверенный на валидность
         cin >> tempAnswer;
         //<проверка на валидность> если ответ валидный, добавляем его в массив ответов
+        while (!check_answer_validity(tempAnswer)) {
+            cin >> tempAnswer;
+            if (check_answer_validity(tempAnswer))
+            {
+                answers[i] = tempAnswer - '0';/*конвертируем символ числа в число*/
+            }
+        }
         if (check_answer_validity(tempAnswer))
         {
-            answers[i] = tempAnswer - '0';
+            answers[i] = tempAnswer - '0';/*конвертируем символ числа в число*/
         }
     }
     return answers;
